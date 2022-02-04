@@ -1,0 +1,54 @@
+body {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  color: #252D35;
+}
+body a {
+  text-decoration: none;
+  color: #252D35;
+}
+body a:hover {
+  color: #B8884B;
+}
+body .inner {
+  max-width: 1520px;
+  margin: 0 auto;
+}
+@media (max-width: 1550px) {
+  body .inner {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+body section:not(:first-child) {
+  margin-top: 250px;
+}
+body .soundproof {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body .soundproof__text {
+  width: 43%;
+}
+body .soundproof__ui-btn {
+  margin-top: 30px;
+}
+@media (max-width: 767px) {
+  body .soundproof__ui-btn {
+    margin-top: 20px;
+  }
+}
+body .soundproof__pic {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(160px, 1fr));
+  grid-template-rows: repeat(4, minmax(145px, 1fr));
+}
+body .soundproof__img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
