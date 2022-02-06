@@ -1,21 +1,34 @@
 .ui-h2 {
   margin-bottom: 30px;
-  font: 600 70px/1.1 'Gilroy', 'Arial', sans-serif;
+  font: 600 60px/1.1 'Gilroy', 'Arial', sans-serif;
 }
 @media (max-width: 1200px) {
   .ui-h2 {
-    font-size: 60px;
+    font-size: 45px;
   }
 }
 @media (max-width: 767px) {
   .ui-h2 {
     margin-bottom: 15px;
-    font-size: 40px;
+    font-size: 32px;
   }
 }
 .ui-h2--accent {
   font-weight: 700;
   color: #B8884B;
+}
+.ui-h2--centered {
+  text-align: center;
+}
+.ui-desc {
+  margin-top: 30px;
+  font: 500 16px/1.2 'Gilroy', 'Arial', sans-serif;
+}
+@media (max-width: 767px) {
+  .ui-desc {
+    margin-top: 15px;
+    font-size: 14px;
+  }
 }
 .ui-list {
   font: 500 16px/1.2 'Gilroy', 'Arial', sans-serif;

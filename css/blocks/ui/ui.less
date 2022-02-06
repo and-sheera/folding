@@ -4,17 +4,28 @@
 .ui {
   &-h2 {
     margin-bottom: 30px;
-    font: 600 70px/1.1 @font;
+    font: 600 60px/1.1 @font;
     @media (max-width: 1200px) {
-      font-size: 60px;
+      font-size: 45px;
     }
     @media (max-width: 767px) {
       margin-bottom: 15px;
-      font-size: 40px;
+      font-size: 32px;
     }
     &--accent {
       font-weight: 700;
       color: @brown;
+    }
+    &--centered {
+      text-align: center;
+    }
+  }
+  &-desc {
+    margin-top: 30px;
+    font: 500 16px/1.2 @font;
+    @media (max-width: 767px) {
+      margin-top: 15px;
+      font-size: 14px;
     }
   }
   &-list {
