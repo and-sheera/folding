@@ -3,6 +3,11 @@ html.no-scroll {
   overflow: hidden;
   height: 100vh;
 }
+html.no-scroll body {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
 body {
   font-family: 'Gilroy', 'Arial', sans-serif;
   color: #252D35;
