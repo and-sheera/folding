@@ -1,11 +1,11 @@
-body {
-  font-family: 'Gilroy', 'Arial', sans-serif;
-  color: #252D35;
-}
-body.no-scroll {
+html.no-scroll {
   position: relative;
   overflow: hidden;
   height: 100vh;
+}
+body {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  color: #252D35;
 }
 body a {
   text-decoration: none;

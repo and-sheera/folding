@@ -1,14 +1,16 @@
 @font: 'Gilroy', 'Arial', sans-serif;
 @black: #252D35;
 @brown: #B8884B;
-body {
-  font-family: @font;
-  color: @black;
+html {
   &.no-scroll {
     position: relative;
     overflow: hidden;
     height: 100vh;
   }
+}
+body {
+  font-family: @font;
+  color: @black;
   a {
     text-decoration: none;
     color: @black;

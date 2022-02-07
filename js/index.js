@@ -12,7 +12,7 @@ function headerBurger() {
     this.classList.toggle('header__burger--active')
     header.classList.toggle('header--shadow')
     menuHeader.classList.toggle('header__menu--mb-visible')
-    document.body.classList.toggle('no-scroll')
+    document.documentElement.classList.toggle('no-scroll')
   })
 }
 
