@@ -126,12 +126,14 @@
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    gap: 10px;
   }
 }
 .footer__txt {
   font: 500 14px/1.2 'Gilroy', 'Arial', sans-serif;
   opacity: 0.5;
+}
+.footer__txt:not(:last-child) {
+  margin-top: 10px;
 }
 .footer__txt:hover {
   color: #252D35;

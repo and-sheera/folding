@@ -89,12 +89,14 @@
     justify-content: space-between;
     @media (max-width: 767px) {
       flex-direction: column-reverse;
-      gap: 10px;
     }
   }
   &__txt {
     font: 500 14px/1.2 @font;
     opacity: 0.5;
+    &:not(:last-child) {
+      margin-top: 10px;
+    }
     &:hover {
       color: @black;
     }
