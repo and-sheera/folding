@@ -31,12 +31,27 @@ function sliderBenefits() {
 }
 
 function sliderUsage() {
+  const sliderWrapper = document.querySelector('.usage__slider')
   const swiperSlider = new Swiper('.usage .swiper', {
-    spaceBetween: 15,
+    spaceBetween: 20,
     slidesPerView: 'auto',
     pagination: {
       el: ".swiper-pagination",
       type: "progressbar",
+    },
+    breakpoints: {
+      676: {
+        spaceBetween: 40
+      }
+    },
+    on: {
+      progress: function(swiper, progress) {
+        if (progress >= 1) {
+          sliderWrapper.classList.add('usage__slider--no-shadow')
+        } else {
+          sliderWrapper.classList.remove('usage__slider--no-shadow')
+        }
+      }
     }
   })
 }
